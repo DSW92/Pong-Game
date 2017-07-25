@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pong Game</title>
+		<style>
+			canvas {
+				background-color: aqua;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas>
+			
+		</canvas>
+
+		<script>
+			//pobranie elementu canvas
+			const canvas = document.querySelector('canvas');
+			//wywołuję metodę w obiekcie canvas
+			//2d to argument
+			//jest to obiekt, który zawiera różnego rodzaju wiaściwości np. kolor itp.
+			const ctx = canvas.getContext('2d');
+
+			canvas.width = 1000;
+			canvas.height = 500;
+
+		</script>
+	</body>
+</html>
