@@ -4,26 +4,43 @@
 		<meta charset="utf-8">
 		<title>Pong Game</title>
 		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+				background-color: darkgrey;
+			}
+
 			canvas {
-				background-color: aqua;
+				border: 3px solid #fff;
 			}
 		</style>
 	</head>
 	<body>
-		<canvas>
-			
+		<canvas>	
 		</canvas>
 
 		<script>
-			//pobranie elementu canvas
+			
 			const canvas = document.querySelector('canvas');
-			//wywołuję metodę w obiekcie canvas
-			//2d to argument
-			//jest to obiekt, który zawiera różnego rodzaju wiaściwości np. kolor itp.
+			
 			const ctx = canvas.getContext('2d');
 
 			canvas.width = 1000;
 			canvas.height = 500;
+
+			const cw = canvas.width;
+			const ch = canvas.height;
+
+			function table() {
+				ctx.fillStyle;
+				ctx.fillRect(0, 0, 1000, 500);
+			}
+
+			table();
 
 		</script>
 	</body>
