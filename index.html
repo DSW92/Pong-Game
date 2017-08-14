@@ -94,6 +94,14 @@
 			
 			function playerPosition(e) {
 				playerY = e.clientY - topCanvas - paddleHeight / 2;
+
+				if (playerY >= ch - paddleHeight) {
+					playerY = ch - paddleHeight;
+				}
+
+				if (playerY <= 0) {
+					playerY = 0;
+				}
 			};
 
 			canvas.addEventListener('mousemove', playerPosition);
