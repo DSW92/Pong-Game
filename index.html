@@ -16,9 +16,8 @@
 
 			canvas {
 				border: 3px solid #fff;
-				/*width: 500px;
-				height: 500px;*/
 			}
+			
 		</style>
 	</head>
 	<body>
@@ -90,6 +89,14 @@
 					ctx.fillRect(cw / 2 - lineWidth / 2, linePosition, lineWidth, lineHeight)
 				}
 			};
+
+			topCanvas = canvas.offsetTop;
+			
+			function playerPosition(e) {
+				playerY = e.clientY - topCanvas - paddleHeight / 2;
+			};
+
+			canvas.addEventListener('mousemove', playerPosition);
 
 			function game() {
 				table();
